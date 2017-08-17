@@ -10,9 +10,7 @@ def menu
       calculate
     when '2'
       exit
-    else
-      puts 'INVALID ENTRY'
-    end
+end
 end
 def calculate
   puts 'Please input your first number'
@@ -29,21 +27,41 @@ def calculate
 
   case operator
     when '*'
+      puts
+      puts
+      puts
+      puts 'Calculating...'
       puts "Equals #{first_number * second_number}"
     when '/'
-      if second_number == 0
-        puts 'INVALID SECOND NUMBER'
+      if "#{first_number} #{second_number}" == 0
+        puts "INVALID SECOND NUMBER #{calculate}"
+
       else
+        puts
+        puts
+        puts
+        puts 'Calculating...'
         puts "Equals #{first_number / second_number}"
       end
     when '+'
+      puts
+      puts
+      puts
+      puts 'Calculating...'
       puts "Equals #{first_number + second_number}"
     when '-'
+      puts
+      puts
+      puts
+      puts 'Calculating...'
       puts "Equals #{first_number - second_number}"
+    when 'quit'
+       exit
     else
       puts 'not a valid entry'
   end
 end
 while true
   menu
+
 end
